@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/TopJohn/go-web-framework/models"
 	"github.com/TopJohn/go-web-framework/pkg/conf"
 	"github.com/TopJohn/go-web-framework/pkg/logging"
 	"github.com/TopJohn/go-web-framework/routers"
@@ -12,6 +13,7 @@ import (
 
 func main() {
 	logging.Setup()
+	models.Setup()
 	router := routers.InitRouter()
 	readTimeout := conf.ServerConfig.ReadTimeout
 	writeTimeout := conf.ServerConfig.WriteTimeout
@@ -31,7 +33,7 @@ func main() {
 	err := server.ListenAndServe()
 
 	if err != nil {
-		logs.Error("server.ListenAndServe() error: %v",err)
+		logs.Error("server.ListenAndServe() error: %v", err)
 	}
 
 }

@@ -11,6 +11,8 @@ require (
 	github.com/golang/protobuf v1.2.0 // indirect
 	github.com/google/pprof v0.0.0-20190208070709-b421f19a5c07 // indirect
 	github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6 // indirect
+	github.com/jinzhu/gorm v1.9.2 // indirect
+	github.com/jinzhu/inflection v0.0.0-20180308033659-04140366298a // indirect
 	github.com/json-iterator/go v1.1.5 // indirect
 	github.com/kr/pretty v0.1.0 // indirect
 	github.com/mattn/go-isatty v0.0.4 // indirect
